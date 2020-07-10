@@ -59,7 +59,7 @@ This code chunk plots the time series and prints the interval with the maximum n
 with(perinterval, plot(interval, average, type = "l"))
 ```
 
-![](PA1_template_files/figure-html/plot time series-1.png)<!-- -->
+![](PA1_template_files/figure-html/time_series-1.png)<!-- -->
 
 ```r
 maxinterval <- subset(perinterval, average==max(perinterval$average)) ##or use which.max()
@@ -103,7 +103,7 @@ newDailysteps <- as.vector(newPerday)
 hist(newDailysteps)
 ```
 
-![](PA1_template_files/figure-html/sum, mean and median-1.png)<!-- -->
+![](PA1_template_files/figure-html/sum_mean_median-1.png)<!-- -->
 
 ```r
 mean(newDailysteps)
@@ -146,4 +146,4 @@ qplot(interval,`mean(steps)`,data = summary,
       geom="line", facets = week~., ylab ="Number of steps")
 ```
 
-![](PA1_template_files/figure-html/panel plot week/weekend-1.png)<!-- -->
+![](PA1_template_files/figure-html/panel_plot_week_weekend-1.png)<!-- -->
